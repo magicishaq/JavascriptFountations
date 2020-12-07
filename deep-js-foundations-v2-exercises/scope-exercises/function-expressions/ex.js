@@ -20,6 +20,7 @@ var paidButNotEnrolled = arr.filter(function getPaidButNotEnrolled (record) {
     return record.paid == true && !currentE.includes(record.id)
 })
 
+
 var paidIds = paidButNotEnrolled.reduce(function getTheIds (ids, object){
     return ids.concat(object.id) 
 }, [])

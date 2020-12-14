@@ -46,6 +46,12 @@ var studentRecords = [{
 ];
 
 var currentEnrollment = [410, 105, 664, 375];
+printRecords(currentEnrollment);
+console.log("----");
+currentEnrollment = paidStudentsToEnroll();
+printRecords(currentEnrollment);
+console.log("----");
+//************************************************************************************** */
 function printRecords(recordIds) {
 	var records = recordIds.map(getStudentFromId);
 	records.sort(sortByNameAsc);
@@ -87,12 +93,7 @@ function getStudentFromId(studentId) {
 	function matchId(record){
 		return (record.id == studentId);
 	}
-}
-printRecords(currentEnrollment);
-console.log("----");
-currentEnrollment = paidStudentsToEnroll();
-printRecords(currentEnrollment);
-console.log("----");
+} 
 // remindUnpaid(currentEnrollment);
 
 /*

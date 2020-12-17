@@ -75,7 +75,7 @@ class  Worker extends Helper{
 	}
 };
 
-
+var deepJS = new Workshop(); 
 // ********************************
 
 deepJS.addStudent(311,"Frank",/*paid=*/true);
